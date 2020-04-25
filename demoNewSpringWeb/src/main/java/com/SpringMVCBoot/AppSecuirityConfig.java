@@ -30,7 +30,7 @@ public class AppSecuirityConfig extends WebSecurityConfigurerAdapter  // to get 
 //	}
 	
 	
-	@Bean					//to get object of the USerDetailsService method
+	@Bean					 //to get object of the USerDetailsService method
 	@Override  
 	protected UserDetailsService userDetailsService() {
 		List<UserDetails> users = new ArrayList<>();

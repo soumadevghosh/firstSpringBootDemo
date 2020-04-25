@@ -29,6 +29,7 @@ public class AppSecuirityConfig extends WebSecurityConfigurerAdapter  // to get 
 //			.anyRequest().authenticated();
 //	}
 	
+	
 	@Bean					//to get object of the USerDetailsService method
 	@Override
 	protected UserDetailsService userDetailsService() {

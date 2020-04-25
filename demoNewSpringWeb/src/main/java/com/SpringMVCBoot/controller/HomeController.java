@@ -18,7 +18,7 @@ public class HomeController //Dispatcher servlet or Front Controller
 	@Autowired
 	AlienRepository repo; // it will look for the object of AlienRepository which has all the CRUD methods(spring-data-jpa)
 	
-	@RequestMapping("/")		//calls the index page
+	@RequestMapping("home")		//calls the index page
 	public String home() 
 	{
 		return "addAlien";		

@@ -88,3 +88,36 @@
 2020-04-25 16:01:46.959  INFO 11528 --- [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2020-04-25 16:01:46.965  INFO 11528 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2020-04-25 16:01:46.993  INFO 11528 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-25 19:18:20.425  INFO 12228 --- [main] c.S.DemoNewSpringApplication             : Starting DemoNewSpringApplication on LAPTOP-J0SB1CGO with PID 12228 (X:\JavaProjects\gitRepo\demoNewSpringWeb\target\classes started by souma in X:\JavaProjects\gitRepo\demoNewSpringWeb)
+2020-04-25 19:18:20.429  INFO 12228 --- [main] c.S.DemoNewSpringApplication             : No active profile set, falling back to default profiles: default
+2020-04-25 19:18:21.282  INFO 12228 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-25 19:18:21.377  INFO 12228 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85ms. Found 2 JPA repository interfaces.
+2020-04-25 19:18:22.274  INFO 12228 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8087 (http)
+2020-04-25 19:18:22.284  INFO 12228 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-25 19:18:22.285  INFO 12228 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-25 19:18:22.526  INFO 12228 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-04-25 19:18:22.531  INFO 12228 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-25 19:18:22.532  INFO 12228 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2035 ms
+2020-04-25 19:18:22.696  INFO 12228 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-25 19:18:23.525  INFO 12228 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-25 19:18:23.576  INFO 12228 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-25 19:18:23.651  INFO 12228 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-25 19:18:23.832  INFO 12228 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-25 19:18:23.960  INFO 12228 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-25 19:18:24.685  INFO 12228 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-25 19:18:24.695  INFO 12228 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-25 19:18:24.786  WARN 12228 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-25 19:18:25.502  WARN 12228 --- [main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2020-04-25 19:18:25.801  INFO 12228 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@892af0e, org.springframework.security.web.context.SecurityContextPersistenceFilter@b3857e2, org.springframework.security.web.header.HeaderWriterFilter@3f357c9d, org.springframework.security.web.csrf.CsrfFilter@21be14c2, org.springframework.security.web.authentication.logout.LogoutFilter@6f8667bb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7af0d91b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@54f2df29, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@446c8c72, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4d4df0f4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37d0d373, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@577bfadb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e2eead5, org.springframework.security.web.session.SessionManagementFilter@5458c71e, org.springframework.security.web.access.ExceptionTranslationFilter@3f3c8b60, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c17bd0b]
+2020-04-25 19:18:26.006  INFO 12228 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-25 19:18:26.087  INFO 12228 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-25 19:18:26.624  INFO 12228 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8087 (http) with context path ''
+2020-04-25 19:18:26.628  INFO 12228 --- [main] c.S.DemoNewSpringApplication             : Started DemoNewSpringApplication in 6.592 seconds (JVM running for 7.623)
+2020-04-25 19:18:46.031  INFO 12228 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-25 19:18:46.032  INFO 12228 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-25 19:18:46.051  INFO 12228 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-04-25 20:08:27.067  INFO 12228 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-04-25 20:08:27.074  INFO 12228 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-25 20:08:27.076  INFO 12228 --- [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-25 20:08:27.082  INFO 12228 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-25 20:08:27.105  INFO 12228 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

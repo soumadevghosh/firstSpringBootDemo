@@ -7,15 +7,15 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.SpringMVCBoot.model.User;
+import com.SpringMVCBoot.model.Users;
 
 
 public class Userprincipal implements UserDetails {
 	
-	private User user;
+	private Users user;
 	
 	
-	public Userprincipal(User user) {
+	public Userprincipal(Users user) {
 		super();
 		this.user = user;
 	}

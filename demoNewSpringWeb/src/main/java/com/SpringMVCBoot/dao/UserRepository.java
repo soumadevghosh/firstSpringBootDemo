@@ -2,9 +2,9 @@ package com.SpringMVCBoot.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.SpringMVCBoot.model.User;
+import com.SpringMVCBoot.model.Users;
 
-public interface UserRepository extends JpaRepository<User, Integer>
+public interface UserRepository extends JpaRepository<Users, Integer>
 {
-	User findByUsername (String username);
+	Users findByUsername (String username);
 }

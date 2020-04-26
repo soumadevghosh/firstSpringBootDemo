@@ -7,7 +7,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.SpringMVCBoot.dao.UserRepository;
-import com.SpringMVCBoot.model.User;
+import com.SpringMVCBoot.model.Users;
 @Service
 public class MyUserDetailsService implements UserDetailsService{
 	
@@ -17,7 +17,7 @@ public class MyUserDetailsService implements UserDetailsService{
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		
-		User user = repo.findByUsername(username);
+		Users user = repo.findByUsername(username);
 		if(user==null)
 			throw new UsernameNotFoundException("user not found");
 		

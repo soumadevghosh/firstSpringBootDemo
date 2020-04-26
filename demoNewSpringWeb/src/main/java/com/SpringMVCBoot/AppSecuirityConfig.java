@@ -6,11 +6,16 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationProvider;
+import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
 @Configuration				//for configuration
@@ -18,8 +23,8 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 //@EnableOAuth2Sso			//Single sign on
 public class AppSecuirityConfig extends WebSecurityConfigurerAdapter  // to get all the secuirity config
 {
-	@Autowired
-	private UserDetailsService userDetailsService;
+//	@Autowired
+//	private UserDetailsService userDetailsService;
 //
 //	@Override
 //	protected void configure(HttpSecurity http) throws Exception {
@@ -29,9 +34,8 @@ public class AppSecuirityConfig extends WebSecurityConfigurerAdapter  // to get 
 //			.anyRequest().authenticated();
 //	}
 	
-	
-	@Bean					 //to get object of the USerDetailsService method
-	@Override  
+	@Bean					//to get object of the USerDetailsService method
+	@Override
 	protected UserDetailsService userDetailsService() {
 		List<UserDetails> users = new ArrayList<>();
 		users.add(User.withDefaultPasswordEncoder().username("souma").password("12345").roles("USER").build()); //static username and password

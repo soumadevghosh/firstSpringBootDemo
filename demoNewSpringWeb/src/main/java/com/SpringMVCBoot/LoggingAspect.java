@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class LoggingAspect //crosscutting concerns
 {
-	private static final Logger LOGGER = LoggerFactory.getLogger(LoggingAspect.class);		// object of Logger
+	private static final Logger LOGGER = LoggerFactory.getLogger(LoggingAspect.class);		// object of  Logger
 	
 	@Before("execution(public * com.SpringMVCBoot.controller.AlienController.getAliens())")
 	public void logBefore() 
